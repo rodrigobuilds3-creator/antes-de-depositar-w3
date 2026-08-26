@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
+  openGraph: {
+    title: "ANTES · Revisa antes de transferir",
+    description: "Conecta empresa, promotor, oferta y cuenta antes de depositar.",
+    locale: "es_MX",
+    type: "website",
+    images: [{ url: "/mockups/antes-de-depositar-flow-v2.png", width: 1716, height: 917, alt: "Flujo de ANTES de depositar" }],
+  },
 };
 
 export default function RootLayout({
