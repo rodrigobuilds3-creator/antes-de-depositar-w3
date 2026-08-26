@@ -2,7 +2,10 @@ import type { Claims } from "./types";
 
 const valueAfter = (text: string, labels: string[]) => {
   for (const label of labels) {
-    const expression = new RegExp(`${label}\\s*[:\\-]?\\s*([^.;\\n]+)`, "i");
+    const expression = new RegExp(
+      `${label}\\s*[:\\-]?\\s*([^.;\\n]+?)(?=\\s+(?:garantiza|promete|ofrece|te invita|transfiere|deposita)\\b|[.;\\n]|$)`,
+      "i",
+    );
     const match = text.match(expression);
     if (match?.[1]) return match[1].trim();
   }
