@@ -172,13 +172,13 @@ In three years, Antes de Depositar could become a free, WhatsApp-first verificat
 | Support handoff | Guided in-app support panel | Demonstrates the operating moment without pretending a live adviser exists |
 | Evidence record | Client-side case-summary download | Honors the Operator declaration without storing personal data |
 | Testing | Unit tests for rules + browser-level core-flow checks | Covers both logic and user completion |
-| Hosting | Vercel free tier | Meets the live-URL and two-deploy requirement |
+| Hosting | OpenAI Sites, public deployment | Matches the actual live environment and preserves a versioned deployment history |
 | Repository | GitHub | Provides commit history and packet-before-code evidence |
 
 ### Security floor
 
 - No secrets committed to the repository.
-- `GEMINI_API_KEY` is server-side only and configured through Vercel environment variables.
+- `GEMINI_API_KEY` is server-side only and must be configured as a protected OpenAI Sites runtime value. When it is absent, the public prototype uses the visibly labeled deterministic demo path and never pretends that image extraction occurred.
 - No real personal data in fixtures, screenshots, seeds, or demos.
 - All form fields have type and length validation.
 - Submitted text is treated as untrusted input and never executed as code or HTML.
@@ -257,5 +257,9 @@ Walk the persona through screenshots of each screen in order. Record every confu
 5. `test: cover red-default rules and fix discovered bug`
 6. `fix: apply persona-test improvement`
 
-**Deployment 1:** functioning core flow after commits 1–4.  
-**Deployment 2:** tested and corrected flow after mechanical and persona passes.
+**Deployment 1:** functioning core flow after commits 1–4.
+**Deployment 2:** branded public release with the mechanical extraction fix.
+**Deployment 3:** persona-test clarification that makes simulated evidence prominent.
+
+**Live product:** https://antes-de-depositar-w3.j6x567qt8g.chatgpt.site/
+**Public repository:** https://github.com/rodrigobuilds3-creator/antes-de-depositar-w3

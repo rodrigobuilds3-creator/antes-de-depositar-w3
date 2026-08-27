@@ -31,3 +31,23 @@
 
 Create the first documentation-only Git commit. Then scaffold the Next.js application and implement only the ANTES design tokens, Step 1 intake, and input validation before adding extraction or verification logic.
 
+## Session close — August 27, 2026
+
+### Decisions made
+
+- Treat OpenAI Sites as the actual hosting architecture; remove stale Vercel references from the final packet.
+- Preserve the three-version deployment record: working flow, mechanical bug fix, and persona-driven simulation clarification.
+- Keep the public experience usable without login and without storing personal data.
+- Keep the multimodal Gemini adapter in the architecture, while stating honestly that a deployment without a protected key uses the labeled deterministic fallback.
+- Package Week 3 in an isolated submission folder so Week 2 files with the same required names cannot be uploaded accidentally.
+
+### Evidence behind the decisions
+
+- The public URL and repository are live.
+- The repository contains eight meaningful commits, with the packet commit before product code.
+- Four automated tests, TypeScript validation, and the production build pass.
+- The Persona Test generated a product change that was committed and redeployed.
+
+### Tomorrow's first move
+
+Record the required Team, Business, and Future videos using the final scripts, then place the MP4 files in the clean submission folders before uploading to Brightspace.

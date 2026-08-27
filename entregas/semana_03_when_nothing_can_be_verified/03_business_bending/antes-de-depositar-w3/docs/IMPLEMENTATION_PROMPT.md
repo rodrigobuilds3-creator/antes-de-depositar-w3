@@ -12,7 +12,7 @@ The product is not a generic deepfake detector and must never decide that an inv
 
 Before the Week 3 module closes:
 
-- a public Vercel URL completes the full core flow;
+- a public OpenAI Sites URL completes the full core flow;
 - the user can paste promotion text or a link, upload a fictional screenshot, or select a fictional demo case;
 - the system extracts or asks for company, promoter, return claim, and payment destination;
 - the user can correct those fields;
@@ -313,4 +313,3 @@ At the end of every work session, update `DECISIONS.md` with what changed, what 
 - [ ] One mechanical bug and its fix are documented.
 - [ ] Persona confusion and the resulting fix are documented.
 - [ ] At least five commits and two deployments exist.
-
