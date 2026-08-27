@@ -395,6 +395,20 @@ button { color: inherit; }
   font-size: 0.72rem;
 }
 .never-safe span { color: var(--muted); }
+.demo-trust-banner {
+  margin-top: 0.65rem;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  background: rgba(255, 91, 95, 0.12);
+  border: 1.5px solid var(--coral);
+  border-radius: 0.7rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+.demo-trust-banner strong { flex: 0 0 auto; }
+.demo-trust-banner span { color: var(--muted); }
 .evidence-section { margin-top: 2.5rem; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; }
 .section-heading h2 { max-width: 13ch; margin: 0; font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1; letter-spacing: -0.045em; }
@@ -467,7 +481,7 @@ button { color: inherit; }
   .secondary-action { order: 2; }
   .result-hero { grid-template-columns: 1fr; }
   .signal-orbit { width: 5.5rem; }
-  .never-safe, .section-heading { align-items: flex-start; flex-direction: column; }
+  .never-safe, .demo-trust-banner, .section-heading { align-items: flex-start; flex-direction: column; }
   .evidence-grid, .decision-grid, .result-actions { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {

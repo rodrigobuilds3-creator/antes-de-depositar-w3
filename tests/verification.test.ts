@@ -19,5 +19,7 @@ describe("verifyClaims", () => {
     const result = verifyClaims({ company: "Cooperativa Horizonte Demo", promoter: "Ana Robles Demo", returnClaim: "rendimiento variable anual", paymentDestination: "DEMO-ACCOUNT-001" });
     assert.equal(result.overall, "review");
     assert.ok(!result.recommendation.toLowerCase().includes("inversión segura"));
+    assert.match(result.checks[0].headline.toLowerCase(), /demo/);
+    assert.match(result.checks[0].detail.toLowerCase(), /no consultamos un regulador real/);
   });
 });

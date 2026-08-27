@@ -142,11 +142,12 @@ function ResultStage({ claims, result, onBack, onRestart }: { claims: Claims; re
         <div><p className="eyebrow">Nuestra recomendación explícita</p><h1>{result.label}</h1><p>{result.recommendation}</p></div>
       </header>
       <div className="never-safe"><strong>No emitimos sellos de “inversión segura”.</strong><span>Comparamos una cadena de evidencia; tú conservas la decisión.</span></div>
+      <div className="demo-trust-banner" role="note"><strong>Resultado simulado.</strong><span>Este prototipo no consulta autoridades, bancos ni registros reales. Los checks sólo muestran cómo funcionaría el servicio.</span></div>
       <section className="evidence-section" aria-labelledby="evidence-title">
         <div className="section-heading"><p className="eyebrow">La cadena, pieza por pieza</p><h2 id="evidence-title">Lo que sostiene este resultado</h2></div>
         <div className="evidence-grid">{result.checks.map((check) => (
           <article className={`evidence-card ${check.status}`} key={check.key}>
-            <div className="evidence-top"><span className="status-icon" aria-hidden="true">{check.status === "confirmed" ? "✓" : check.status === "missing" ? "?" : "×"}</span><span>{check.title}</span><small>{check.status === "confirmed" ? "Coincide" : check.status === "missing" ? "Falta" : "No coincide"}</small></div>
+            <div className="evidence-top"><span className="status-icon" aria-hidden="true">{check.status === "confirmed" ? "✓" : check.status === "missing" ? "?" : "×"}</span><span>{check.title}</span><small>{check.status === "confirmed" ? "Coincide en demo" : check.status === "missing" ? "Falta" : "No coincide"}</small></div>
             <h3>{check.headline}</h3><p>{check.detail}</p><footer><span>Fuente simulada</span><strong>{check.source}</strong></footer>
           </article>
         ))}</div>

@@ -68,7 +68,7 @@ export function verifyClaims(claims: Claims): VerificationResult {
   const company: EvidenceCheck = !companyValue
     ? missing("company", "Empresa", "Padrón regulatorio ficticio")
     : institution
-      ? { key: "company", title: "Empresa", status: "confirmed", headline: "Nombre localizado", detail: "El nombre coincide con una institución del padrón de demostración.", source: "Padrón regulatorio ficticio", simulated: true }
+      ? { key: "company", title: "Empresa", status: "confirmed", headline: "Nombre localizado en demo", detail: "Coincide únicamente con el padrón ficticio de esta demostración; no consultamos un regulador real.", source: "Padrón regulatorio ficticio", simulated: true }
       : { key: "company", title: "Empresa", status: "mismatch", headline: "No encontramos coincidencia", detail: "El nombre no coincide exactamente con el padrón ficticio. No deposites hasta aclararlo.", source: "Padrón regulatorio ficticio", simulated: true };
 
   const promoterValue = normalize(claims.promoter);
